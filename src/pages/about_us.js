@@ -1,11 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import PathNow from '../components/PathNow'
+import Navigation_Navber from '../components/Navigation_Navber/Navigation_Navber'
+import Footer from '../components/Navigation_Navber/Footer'
+
+// import Carousel from '../components/Navigation_Navber/Carousel'
 
 const about_us = () => {
     return (
         <>
-            <h1>about_us</h1>
+           <Navigation_Navber/>
+           <Footer />
         </>
     )
 }

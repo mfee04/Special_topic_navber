@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PathNow from '../components/PathNow'
+import Navigation_Navber from '../components/Navigation_Navber/Navigation_Navber'
+import Footer from '../components/Navigation_Navber/Footer'
 
 const Login_register = () => {
     return (
         <>
-            <h1>Login_register</h1>
+           <Navigation_Navber/>
+            <Footer/>
         </>
     )
 }

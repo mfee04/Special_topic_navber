@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PathNow from '../components/PathNow'
+import Navigation_Navber from '../components/Navigation_Navber/Navigation_Navber'
+import Footer from '../components/Navigation_Navber/Footer'
 
 const Wine_service = () => {
     return (
         <>
-            <h1>Wine_service</h1>
+          <Navigation_Navber/>
+            <Footer/>
         </>
     )
 }
