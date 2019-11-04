@@ -14,13 +14,13 @@ class Carousel extends React.Component {
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
+                        <div className="carousel-item active vh-100">
                             <img src="../images/champagne-4075806_1920.jpg" className="d-block w-100" alt />
                         </div>
-                        <div className="carousel-item">
+                        <div className="carousel-item vh-100">
                             <img src="../images/StockSnap_6JMD0WXXTG.jpg" className="d-block w-100" alt />
                         </div>
-                        <div className="carousel-item">
+                        <div className="carousel-item vh-100">
                             <img src="../images/StockSnap_6JMD0WXXTG.jpg" className="d-block w-100" alt />
                         </div>
                     </div>
