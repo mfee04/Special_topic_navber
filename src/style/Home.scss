@@ -22,7 +22,10 @@
   --em: 16;
   --color7: rgb(255, 255, 255);
 }
-
+// 與Navber隔開
+.pt-108 {
+  padding-top: 108px;
+}
 /* - - - - - - - - - - - - */
 /* 最上方有購物車icon的bar */
 .search_bar_css {
@@ -43,7 +46,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 11;
   background: var(--main-white);
   width: 100%;
 }
@@ -63,6 +66,10 @@
   cursor: pointer;
 }
 .nav_top_icon > img {
+  width: 25px;
+  margin: calc(var(--em) * 0.625px);
+}
+.nav_top_icon > a > img {
   width: 25px;
   margin: calc(var(--em) * 0.625px);
 }
@@ -179,7 +186,7 @@
   justify-content: space-around;
   > p {
     font-size: 36px;
-    letter-spacing: 46px;
+    letter-spacing: 36px;
     line-height: 80px;
     text-align: center;
     margin: 0;
@@ -216,7 +223,7 @@
     height: 60px;
     > p {
       font-size: 28px;
-      line-height: 60px;
+      line-height: 55px;
       letter-spacing: 15px;
       ~ img {
         width: 60px;

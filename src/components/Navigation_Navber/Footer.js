@@ -13,7 +13,7 @@ class Footer extends React.Component {
                 <div className="Home_footer">
                     <p>未滿十八歲請勿飲酒</p>
                     <p>禁止酒駕</p>
-                    <p>飲酒過量有害健康</p><img src={"../images/Dontwine.png"}></img>
+                    <p>飲酒過量有害健康</p><img src={"../images/Wine_Accessories/Dontwine.png"}></img>
                 </div>
             </>
         )

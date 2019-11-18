@@ -15,13 +15,13 @@ class Carousel extends React.Component {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active vh-100">
-                            <img src="../images/champagne-4075806_1920.jpg" className="d-block w-100" alt />
+                            <img src="../images/HomeCarousel/champagne-4075806_1920.jpg" className="d-block w-100 h-100 background-size-cover" style={{"objectFit":"cover"}} alt />
                         </div>
                         <div className="carousel-item vh-100">
-                            <img src="../images/StockSnap_6JMD0WXXTG.jpg" className="d-block w-100" alt />
+                            <img src="../images/HomeCarousel/StockSnap_6JMD0WXXTG.jpg" className="d-block w-100 h-100 background-size-cover" alt />
                         </div>
                         <div className="carousel-item vh-100">
-                            <img src="../images/StockSnap_6JMD0WXXTG.jpg" className="d-block w-100" alt />
+                            <img src="../images/HomeCarousel/StockSnap_6JMD0WXXTG.jpg" className="d-block w-100 h-100 background-size-cover" alt />
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -8,6 +8,7 @@ const about_us = () => {
     return (
         <>
            <Navigation_Navber/>
+           
            <Footer />
         </>
     )

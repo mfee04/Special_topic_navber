@@ -1,0 +1,193 @@
+* {
+  font-family: 微軟正黑體;
+  /* outline: 1px solid sienna; */
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid #ccc;
+}
+/* 變數設定 */
+:root {
+  --color1: #3b2c25;
+  --color2: #61544a;
+  --color3: #2d333c;
+  --color4: #e6a33c;
+  --color5: #30120b;
+  --text-color: #646464;
+  --text-price: #752c1c;
+  --main-orange: #e6a33c;
+  --main-white: #ffffff;
+  --cate-font: "Trajan";
+  --main-black: #000000;
+  --main-blackRgba: #000000c0;
+  --em: 16;
+  --color7: rgb(255, 255, 255);
+}
+// 與Navber隔開
+.pt-95 {
+  padding-top: 95px;
+}
+.color1 {
+  color: var(--color1);
+}
+//底圖
+.Home_Container_LatestArticles_Bg_img {
+  background-image: url(../../images/Layer-78.png);
+  width: 100%;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  //標題文字
+  h3 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: var(--main-white);
+  }
+  //兩邊圖片文字區域
+  .figure {
+    position: relative;
+    width: 255px;
+    margin: 0 10px;
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--main-black);
+      color: var(--main-white);
+      padding: 4px;
+      margin: 0;
+    }
+  }
+  //中間圖片文字區域
+  .M_img {
+    width: 540px;
+    height: 553.55px;
+    background: var(--main-white);
+    position: relative;
+    .figure {
+      display: flex;
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+      margin: auto;
+      padding-top: 16px;
+      img {
+        margin-top: 16px;
+        width: 100%;
+        margin: auto;
+      }
+    }
+    .text_region {
+      a {
+        text-decoration: none;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        color: var(--main-black);
+        transition: 0.5s;
+        &:hover {
+          color: var(--main-orange);
+          transition: 0.5s;
+        }
+      }
+    }
+    .figure_text {
+      width: 500px;
+      margin: 30px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .Home_Container_LatestArticles_Bg_img {
+    .LatestArticles_Area1 {
+      display: flex;
+      justify-content: center;
+    }
+    .LatestArticles_Area2 {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      .M_img {
+        display: flex;
+        width: 800px;
+        height: 250px;
+        margin: 0;
+        .figure {
+          margin-left: 20px;
+          padding: 0;
+          width: 255px;
+          height: 180px;
+          img {
+            margin: 0;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .LatestArticles_Area3 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .Home_Container_LatestArticles_Bg_img {
+    .LatestArticles_Area2 {
+      .M_img {
+        width: 600px;
+        height: 250px;
+        position: relative;
+        .figure {
+          width: 255px;
+          height: 180px;
+        }
+      }
+      .figure_text {
+        width: 300px;
+        margin-bottom: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        a {
+          bottom: -10px;
+          z-index: 30;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Home_Container_LatestArticles_Bg_img {
+    .LatestArticles_Area1 {
+      a:nth-child(3) {
+        display: none;
+      }
+    }
+    .LatestArticles_Area2 {
+      .M_img {
+        width: 430px;
+        height: 250px;
+        .figure {
+          width: 200px;
+          height: 180px;
+          margin: 35px 10px;
+        }
+      }
+      .figure_text {
+        width: 250px;
+      }
+    }
+    .LatestArticles_Area3 {
+      a:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}

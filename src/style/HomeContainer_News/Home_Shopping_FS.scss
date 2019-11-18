@@ -1,0 +1,201 @@
+* {
+  font-family: 微軟正黑體;
+  /* outline: 1px solid sienna; */
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid #ccc;
+}
+/* 變數設定 */
+:root {
+  --color1: #3b2c25;
+  --color2: #61544a;
+  --color3: #2d333c;
+  --color4: #e6a33c;
+  --color5: #30120b;
+  --text-color: #646464;
+  --text-price: #752c1c;
+  --main-orange: #e6a33c;
+  --main-white: #ffffff;
+  --cate-font: "Trajan";
+  --main-black: #000000;
+  --main-blackRgba: #000000c0;
+  --em: 16;
+  --color7: rgb(255, 255, 255);
+}
+// 與Navber隔開
+.pt-95 {
+  padding-top: 95px;
+}
+//刪除線
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+//對齊
+.justify-content-space-between {
+  justify-content: space-between;
+}
+//背景區塊
+.Home_Shopping_FS_bg {
+  background-image: url(../../images/Wooden.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  //標題文字
+  h3 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: var(--main-white);
+    white-space: nowrap; //不換行
+    letter-spacing: 4px;
+  }
+  .line {
+    width: 30%;
+    height: 1px;
+    border: 1px solid var(--main-white);
+    margin: 0;
+    margin-top: 110px;
+  }
+}
+// --------------------------------------------------------------
+//SVG區域
+.Shopping_FS_Block {
+  display: flex;
+  .Shopping_FS_svg {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    p:nth-child(2) {
+      font-size: 26px;
+      font-weight: 900;
+    }
+    p {
+      color: var(--main-white);
+      margin: 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Shopping_FS_text {
+    width: 30px;
+    height: 150px;
+    display: flex;
+    p {
+      text-align: center;
+      justify-content: center;
+      color: var(--main-white);
+      width: 20px;
+      height: 50px;
+      margin: auto;
+      font-size: 30px;
+    }
+  }
+}
+.Shooping_area{
+  .Shopping_FS_Block{
+    transition: .5s;
+  }
+}
+//-----------------------------------------------
+@media only screen and (max-width: 991px) {
+  .Home_Shopping_FS_bg {
+    height: 100vh;
+    .Shooping_area {
+      .Shopping_FS_Block:nth-child(1) {
+        transform: translateX(160px);
+        transition: 0.5s;
+      }
+      .Shopping_FS_Block:nth-child(2) {
+        transform: translateX(160px);
+        transition: 0.5s;
+      }
+      .Shopping_FS_Block:nth-child(3) {
+        transform: translateX(160px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(-260px, 220px) rotate(150deg);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(4) {
+        transform: translate(-320px, 300px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(5) {
+        transform: translate(-280px, 300px);
+        transition: 0.5s;
+      }
+      .Shopping_FS_Block {
+        transition: 0.5s;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .Home_Shopping_FS_bg {
+    .Shooping_area {
+      .Shopping_FS_Block {
+        .Shopping_FS_svg {
+          width: 120px;
+          height: 120px;
+          transition: 0.5s;
+        }
+      }
+      .Shopping_FS_Block:nth-child(1) {
+        transform: translateX(140px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(0,-15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(2) {
+        transform: translateX(140px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(0,-15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(3) {
+        transform: translateX(140px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(-230px, 200px) rotate(150deg);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(4) {
+        transform: translate(-260px, 300px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(15px,-15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(5) {
+        transform: translate(-220px, 300px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
